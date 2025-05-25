@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact - Marcello's Marvelous Music</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Marcello's Marvelous Music</h1>
+        <nav>
+            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <p>Let us know what you need:</p>
+                <fieldset>
+                    <legend>I'm reaching out about:</legend>
+                    <label>
+                        <input type="radio" name="contactReason" value="rehearsal" required />
+                        Rehearsal Space Booking
+                    </label><br>
+                    <label>
+                        <input type="radio" name="contactReason" value="recording" />
+                        Recording Studio Booking
+                    </label><br>
+                    <label>
+                        <input type="radio" name="contactReason" value="vinyl" />
+                        Vinyl Sales / Appraisal
+                    </label>
+                </fieldset>
+                <br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required /><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required /><br><br>
+
+                <label for="phone">Phone (optional):</label>
+                <input type="tel" id="phone" name="phone" /><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="33" required></textarea><br><br>
+
+                <button type="submit">Send Message</button>
+                <br>
+
+                <p>We'll get back to you as soon as we can!</p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h2>Visit Us</h2>
+        <p>2000 Main Street, Blandover, MA</p>
+        <p>Open Mon–Sun, 9AM–7PM</p>
+        <p>Email: info@marcellosvinyls.com</p>
+    </footer>
+</body>
+<script>
+    const toggleBtn = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    toggleBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
+</script>
+</html>

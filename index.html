@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcello's Marvelous Music</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Marcello's Marvelous Music</h1>
+    <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            Located in his parents' basement, Marcello’s Marvelous Music is a retro haven for sonic voyagers.
+            It’s part vinyl shop, part rehearsal space, part recording studio. Whether you’re hunting for obscure records,
+            jamming with your band, or tracking your next masterpiece — we’ve got the gear, the vibes, and fresh food straight from the roomies.
+        </p>
+        <ul>
+            <li>Used vinyl record sales</li>
+            <li>Rehearsal space for bands of all styles</li>
+            <li>Adaptive recording studio; producing, engineering, mixing, and mastering for any style</li>
+        </ul>
+        <img src="cave0.jpeg" alt="rehearsal space" class="inline-image">
+    </section>
+
+    <section id="cave">
+        <h2>Inside the cave</h2>
+            <div class="cave-preview">
+                <img src="cave1.jpeg" alt="keyboards">
+                <img src="cave2.jpeg" alt="guitars">
+                <img src="cave3.jpeg" alt="studio">
+            </div>
+    </section>
+</main>
+
+<footer id="contact">
+    <h2>Visit Us</h2>
+    <p>2000 Main Street, Blandover, MA</p>
+    <p>Open Mon–Sun, 9AM–7PM</p>
+    <p>Email: info@marcellosvinyls.com</p>
+</footer>
+<script>
+    const toggleBtn = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    toggleBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
+</script>
+</body>
+</html>

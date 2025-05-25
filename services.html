@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Services - Marcello's Marvelous Music</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Marcello's Marvelous Music</h1>
+        <nav>
+            <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Our Services</h2>
+            <p>Marcello's Marvelous Music isn’t just a record shop — it's a basement-built creative ecosystem, powered by passion, vintage gear, and more cables than there should be.</p></p>
+
+            <p><strong>What we've got:</strong></p>
+            <ul>
+                <li><strong>Used Vinyl Sales:</strong> A curated selection of obscure prog, fusion, avant-garde, and underground gems. If you've never heard of it, we probably have it.</li>
+            </ul>
+
+            <img src="magma.jpeg" alt="Magma Udu Wudu Vinyl" class="inline-image">
+
+            <ul>
+                <li><strong>Rehearsal Space:</strong> Fully equipped with quality gear, comfy seating, and acoustics that inspire creativity (or at least wicked loud noise).</li>
+                <li><strong>Recording Studio:</strong> Hybrid analog/digital setup optimized for weird masterpieces, ambient soundscapes, or your next EP.</li>
+            </ul>
+
+            <img src="cave3.jpeg" alt="studio view" class="inline-image">
+
+            <p><strong>Instruments Available:</strong></p>
+            <ul>
+                <li><strong>Guitars:</strong> Gibson Les Paul, Guild Dreadnaught 6-string, D'Angelico 12-string, Fender P-Bass 4-string, Classical 6-string nylon</li>
+                <li><strong>Keyboards:</strong> 1916 Steinway Model O, Hammond B3 + M3 (both with Leslies), Roland FP-7, Korg Triton, Numa Compact X SE, and thousands of plugins</li>
+                <li><strong>Drums:</strong> Gretsch Catalina Maple 4-piece (22"), Zildjian A Customs</li>
+            </ul>
+
+            <img src="cave0.jpeg" alt="rehearsal space" class="inline-image">
+
+            <p><strong>Recording Gear:</strong></p>
+            <ul>
+                <li><strong>Mics:</strong> 4x Shure SM57/58, 1x Beta52, 2x MXL 990/991, 3x sE X1 LDCs, 6x sE8 SDCs</li>
+                <li><strong>Monitors:</strong> Custom built with love - and a few solder burns</li>
+                <li><strong>Software:</strong> ProTools Ultimate, Logic Pro, iZotope Suite, Soundtoys, Slate Digital Pass, SSL Collection, PianoTeq 8, Kontakt, SynthMaster, Arturia V Collection, Steven Slate Trigger, and dozens of homemade samples/libraries</li>
+            </ul>
+
+            <img src="protools.png" alt="protools plugins" class="inline-image">
+
+            <p>We're always happy to work with artists of all backgrounds. Whether you're a jazz trio, noise collective, or lo-fi beatmaker, this space is for you. Come plug in.
+            <strong>Coming Soon:</strong>48 3"/6" acoustic panels, fully adjustable. And hopefully one day, a new location that isn't my parent's basement!</p>
+        </section>
+    </main>
+    <footer>
+        <h2>Visit Us</h2>
+        <p>2000 Main Street, Blandover, MA</p>
+        <p>Open Mon–Sun, 9AM–7PM</p>
+        <p>Email: info@marcellosvinyls.com</p>
+    </footer>
+</body>
+<script>
+    const toggleBtn = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    toggleBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
+</script>
+</html>
