@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* Made the fonts even more retro... IBM!!*/
 body {
     font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
     background-color: #f4eee0;
@@ -54,13 +55,6 @@ section {
     margin-bottom: 40px;
 }
 
-
-/* Gallery */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 10px;
-}
 .cave-preview {
     width: 100%;
     display: flex;
@@ -81,20 +75,6 @@ section {
 }
 
 .cave-preview img:hover {
-    transform: scale(1.05);
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.gallery img {
-    width: 100%;
-    border: 2px solid #c2a77c;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery img:hover {
     transform: scale(1.05);
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -123,10 +103,6 @@ form fieldset {
     border: 2px solid #8c7154;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-main .inline-image {
-    max-width: 100%;
 }
 
 .inline-image:hover {
@@ -183,4 +159,46 @@ main .inline-image {
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
+}
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+.album-grid img {
+    display: block; /* removes default inline spacing */
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1; /* guarantees square shape */
+    object-fit: cover;
+    border: 2px solid #8c7154;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+form button {
+    font-size: 1.2rem;
+    padding: 12px 24px;
+    background-color: #d6b36a;
+    border: 2px solid #8c7154;
+    color: #3a2e1e;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #c4a256;
 }
